@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Html forms</title>
+</head>
+<body>
+<h1> This is the basic setup of a html form</h1>
+<form method="post">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter Your Name" aria-invalid="true"> <br>
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="Enter Your Password" aria-describedby="password-hint">
+    <div id="password-id">Password must be at least 8 characters long</div>
+    <fieldset>
+        <legend>Payments:</legend>
+    <label>Select your preferred Payment method</label><br>
+    <input type="radio" id="creditCard" name="paymentMethod" value="creditCard">
+    <label for="creditCard">Credit Card</label> <br>
+
+    <input type="radio" id="paypal" name="paymentMethod" value="paypal">
+    <label for="paypal">PayPal</label> <br>
+
+    <input type="radio" id="cash" name="paymentMethod" value="cash">
+    <label for="cash">Cash</label> <br>
+        </fieldset>
+    <fieldset>
+        <legend>Interests</legend>
+    <label>Choose Your Interests</label><br>
+    <input type="checkbox" id="music" name="interest" value="music">
+    <label for="music">Music</label><br>
+    <input type="checkbox" id="food" name="interest" value="food">
+    <label for="food">Food</label> <br>
+    <input type="checkbox" id="travel" name="interests" value="travel">
+    <label for="travel">Travel</label><br>
+        </fieldset>
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
